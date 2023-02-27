@@ -56,10 +56,6 @@ AddBookBtn.addEventListener('click', () => {
 const currentDate = document.getElementById('clock');
 
 function showTime() {
-  // const now = DateTime.local();
-  // const time = now.toLocaleString(DateTime.TIME_SIMPLE);
-  // const date = now.toLocaleString(DateTime.DATE_FULL);
-  // display the time
   currentDate.innerHTML = luxon.DateTime.now().toLocaleString(
     luxon.DateTime.DATETIME_FULL_WITH_SECONDS,
   );
