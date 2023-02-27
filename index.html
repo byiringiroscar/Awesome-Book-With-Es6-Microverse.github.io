@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <header>
+        <h3 class="logo">Awesome<span>B</span>ooks</h3>
+        <nav>
+            <ul class="nav-link">
+                <li>List</li>
+                <li>Add</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="date-time">
+            <span id="clock"></span>
+            <span id="date"></span>
+        </div>
+        <section class="book-container">
+            <div class="book-container-header">
+                <h2>All Awesome Books</h2>
+                <hr class="line-book">
+            </div>
+            <div class="book-collection">
+                
+            </div>
+         
+        </section>
+        <section class="add-new-book hide">
+            <div class="add-book-header">
+                <h3>Add book</h3>
+                <hr class="add-book-break">
+            </div>
+            <form action="" method="post" id="myForm">
+                <input type="text" name="title" id="booktitle" placeholder="Title">
+                <input type="text" name="author" id="bookauth" placeholder="Author">
+                <button type="button" class='addbtn' id="AddBookBtn">Add Book</button>
+            </form>
+        </section>
+        <section class="contact-me hide">
+            <h3>Contact Information</h3>
+            <div class="contact-description">
+                <h4>You can reach us to say hello on the follwoing contacts</h4>
+                <ul class="contact-list">
+                    <li class="single-contact">Contact: +250786405263</li>
+                    <li class="single-contact"> Contact : +91 8491095780</li>
+                    <li class="single-contact">Name: Oscar Byiringiro and Gh Hyder Dar</li>
+                    <li class="single-contact">Email: ntwarioscar12@gmail.com and  hyderali400@gmail.com</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <h3 class="logo">Awesome<span>B</span>ooks</h3>
+        <ul class="footerEle">
+            <li class="contactftr"><a href="https://github.com/codeWithHyder">Gh. Hyder Dar,</a></li>
+            <li class="contactftr"><a href="https://www.linkedin.com/in/oscar-byiringiro-9baa8313a/">Oscar Byiringiro</a></li>
+        </ul>
+    </footer>
+
+    <script type="module" src="dateTime.js"></script>
+    <script src="./modules/luxon.js" type=""></script>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="./modules/updateBook.js"></script>
+    
+</body>
+</html>

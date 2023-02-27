@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(97, 24, 79);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo {
+  font-size: 15px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logo span {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  font-weight: 700;
+  color: chocolate;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+ul li {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: chocolate;
+}
+
+main {
+  width: 100vw;
+}
+
+.date-time {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.date-time span {
+  float: right;
+  padding-right: 10px;
+  color: black;
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.book-container.hide {
+  display: none;
+}
+
+.book-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.book-container-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.book-collection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.line-book {
+  width: 10%;
+  border: 2px solid rgb(97, 24, 79);
+  border-radius: 2px;
+}
+
+.single-book {
+  width: 55%;
+  height: 50px;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+.single-book:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.single-book .item {
+  color: black;
+}
+
+.btnr {
+  width: 80px;
+  height: 30px;
+  color: white;
+  background-color: rgb(97, 24, 79);
+  border: 1px solid rgb(97, 24, 79);
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* add book section */
+.add-new-book.hide {
+  display: none;
+}
+
+.add-new-book {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.add-book-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.add-book-header h3 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.add-book-break {
+  width: 5%;
+  border: 2px solid rgb(97, 24, 79);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 10px;
+}
+
+form input {
+  height: 30px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: 1px solid black;
+}
+
+form input:focus {
+  border: 2px solid rgb(97, 24, 79);
+  outline: rgb(97, 24, 79);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
+form button {
+  width: 90px;
+  cursor: pointer;
+  margin: 0 auto;
+  height: 30px;
+  font-weight: bold;
+  border: 2px solid rgb(97, 24, 79);
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: rgb(97, 24, 79);
+  border: 1px solid rgb(97, 24, 79);
+  color: white;
+}
+
+/* contact section  */
+.contact-me.hide {
+  display: none;
+}
+
+.contact-me {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact-description {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-description .contact-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-list .single-contact {
+  color: black;
+  margin: 0 auto;
+  list-style: circle;
+}
+
+/* footer section */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  background-color: #61184f;
+  position: absolute;
+  bottom: 0;
+  padding: 0 2rem;
+}
+
+.footerEle {
+  display: flex;
+  gap: 10px;
+}
+
+.contactftr a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+  header {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
