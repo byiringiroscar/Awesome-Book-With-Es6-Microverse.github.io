@@ -144,4 +144,4 @@ I would like to thank microverse for better orientation of documentation
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./LICENSE.md) licensed.
